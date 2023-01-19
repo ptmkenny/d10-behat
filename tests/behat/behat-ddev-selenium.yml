@@ -15,7 +15,7 @@ default:
     Drupal\MinkExtension:
       # https://github.com/jhedstrom/drupalextension/issues/486
       ajax_timeout: 15
-      base_url: https://d10-behat.ddev.site/
+      base_url: http://d10-behat.ddev.site/
       browser_name: chrome
       # For file uploads.
       files_path: /app/submodules/behat-media/behat-test-files
@@ -47,8 +47,6 @@ profile_chrome:
               chrome:
                 # https://stackoverflow.com/questions/48450594/selenium-timed-out-receiving-message-from-renderer/52340526
                 switches:
-                  # Certificate errors must be ignored for the test to work.
-                  - '--ignore-certificate-errors'
                   - 'start-maximized' # https://stackoverflow.com/a/26283818/1689770
                   - 'automation' # https://stackoverflow.com/a/43840128/1689770
                   - '--no-sandbox' # https://stackoverflow.com/a/50725918/1689770
