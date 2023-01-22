@@ -47,8 +47,6 @@ profile_chrome:
               chrome:
                 # https://stackoverflow.com/questions/48450594/selenium-timed-out-receiving-message-from-renderer/52340526
                 switches:
-                  # Certificate errors must be ignored for the test to work.
-                  - '--ignore-certificate-errors'
                   - 'start-maximized' # https://stackoverflow.com/a/26283818/1689770
                   - 'automation' # https://stackoverflow.com/a/43840128/1689770
                   - '--no-sandbox' # https://stackoverflow.com/a/50725918/1689770
